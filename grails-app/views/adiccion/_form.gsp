@@ -7,7 +7,7 @@
 		<g:message code="adiccion.adicto.label" default="Adicto" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select name="adicto" from="${tpFallas.frame.Adiccion$Adicto?.values()}" keys="${tpFallas.frame.Adiccion$Adicto.values()*.name()}" required="" value="${adiccionInstance?.adicto?.name()}"/>
+	<g:textField name="adicto" required="" value="${params.persona.toUpperCase()}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: adiccionInstance, field: 'estaEnTratamiento', 'error')} ">

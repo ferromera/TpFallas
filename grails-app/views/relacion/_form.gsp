@@ -7,7 +7,7 @@
 		<g:message code="relacion.desde.label" default="Desde" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select name="desde" from="${tpFallas.frame.Relacion$Participante?.values()}" keys="${tpFallas.frame.Relacion$Participante.values()*.name()}" required="" value="${relacionInstance?.desde?.name()}"/>
+	<g:textField name="desde" required="" value="${params.persona.toUpperCase()}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: relacionInstance, field: 'hacia', 'error')} required">
@@ -15,7 +15,7 @@
 		<g:message code="relacion.hacia.label" default="Hacia" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select name="hacia" from="${tpFallas.frame.Relacion$Participante?.values()}" keys="${tpFallas.frame.Relacion$Participante.values()*.name()}" required="" value="${relacionInstance?.hacia?.name()}"/>
+	<g:select name="hacia" from="${['PADRE', 'MADRE', 'NINO','OTRO']-[params.persona.toUpperCase()]}" keys="${['PADRE', 'MADRE', 'NINO','OTRO']-[params.persona.toUpperCase()]}" required="" value="${relacionInstance?.hacia?.name()}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: relacionInstance, field: 'valor', 'error')} required">
