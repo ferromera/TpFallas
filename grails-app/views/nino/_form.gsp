@@ -36,7 +36,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: ninoInstance, field: 'discapacidad', 'error')} required">
 	<label for="discapacidad">
-		<g:message code="nino.discapacidad.label" default="Discapacidad" />
+		<g:message code="nino.discapacidad.label" default="Discapacidad (0-5)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="discapacidad" type="number" value="${ninoInstance.discapacidad}" required=""/>
@@ -44,7 +44,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: ninoInstance, field: 'edad', 'error')} required">
 	<label for="edad">
-		<g:message code="nino.edad.label" default="Edad" />
+		<g:message code="nino.edad.label" default="Edad (0-17)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="edad" type="number" value="${ninoInstance.edad}" required=""/>

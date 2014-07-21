@@ -20,7 +20,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: adiccionInstance, field: 'grado', 'error')} required">
 	<label for="grado">
-		<g:message code="adiccion.grado.label" default="Grado" />
+		<g:message code="adiccion.grado.label" default="Grado (0 a +2 entero)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="grado" type="number" value="${adiccionInstance.grado}" required=""/>

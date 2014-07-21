@@ -12,7 +12,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: entrevistaInstance, field: 'resultado', 'error')} required">
 	<label for="resultado">
-		<g:message code="entrevista.resultado.label" default="Resultado" />
+		<g:message code="entrevista.resultado.label" default="Resultado (-2 a +2 entero)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="resultado" type="number" value="${entrevistaInstance.resultado}" required=""/>

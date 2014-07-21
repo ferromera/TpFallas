@@ -36,7 +36,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: nuevaParejaInstance, field: 'edad', 'error')} required">
 	<label for="edad">
-		<g:message code="nuevaPareja.edad.label" default="Edad" />
+		<g:message code="nuevaPareja.edad.label" default="Edad (10-120)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="edad" type="number" value="${nuevaParejaInstance.edad}" required=""/>
@@ -44,7 +44,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: nuevaParejaInstance, field: 'discapacidad', 'error')} required">
 	<label for="discapacidad">
-		<g:message code="nuevaPareja.discapacidad.label" default="Discapacidad" />
+		<g:message code="nuevaPareja.discapacidad.label" default="Discapacidad (0-5)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="discapacidad" type="number" value="${nuevaParejaInstance.discapacidad}" required=""/>
@@ -60,7 +60,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: nuevaParejaInstance, field: 'ingresos', 'error')} required">
 	<label for="ingresos">
-		<g:message code="nuevaPareja.ingresos.label" default="Ingresos" />
+		<g:message code="nuevaPareja.ingresos.label" default="Ingresos (0-500000)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="ingresos" type="number" value="${nuevaParejaInstance.ingresos}" required=""/>

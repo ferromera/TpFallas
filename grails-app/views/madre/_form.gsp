@@ -46,7 +46,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: madreInstance, field: 'discapacidad', 'error')} required">
 	<label for="discapacidad">
-		<g:message code="madre.discapacidad.label" default="Discapacidad" />
+		<g:message code="madre.discapacidad.label" default="Discapacidad (0-5)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="discapacidad" type="number" value="${madreInstance.discapacidad}" required=""/>
@@ -54,7 +54,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: madreInstance, field: 'edad', 'error')} required">
 	<label for="edad">
-		<g:message code="madre.edad.label" default="Edad" />
+		<g:message code="madre.edad.label" default="Edad (10-120)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="edad" type="number" value="${madreInstance.edad}" required=""/>
@@ -70,7 +70,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: madreInstance, field: 'ingresos', 'error')} required">
 	<label for="ingresos">
-		<g:message code="madre.ingresos.label" default="Ingresos" />
+		<g:message code="madre.ingresos.label" default="Ingresos (0-500000)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="ingresos" type="number" value="${madreInstance.ingresos}" required=""/>

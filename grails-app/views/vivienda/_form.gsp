@@ -27,7 +27,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: viviendaInstance, field: 'habitabilidad', 'error')} required">
 	<label for="habitabilidad">
-		<g:message code="vivienda.habitabilidad.label" default="Habitabilidad" />
+		<g:message code="vivienda.habitabilidad.label" default="Habitabilidad (-2 a +2 entero)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="habitabilidad" type="number" value="${viviendaInstance.habitabilidad}" required=""/>
@@ -43,7 +43,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: viviendaInstance, field: 'riesgo', 'error')} required">
 	<label for="riesgo">
-		<g:message code="vivienda.riesgo.label" default="Riesgo" />
+		<g:message code="vivienda.riesgo.label" default="Riesgo (0 a +2 entero)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="riesgo" type="number" value="${viviendaInstance.riesgo}" required=""/>

@@ -20,7 +20,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: relacionInstance, field: 'valor', 'error')} required">
 	<label for="valor">
-		<g:message code="relacion.valor.label" default="Valor" />
+		<g:message code="relacion.valor.label" default="Valor (-2 a +2 entero)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="valor" type="number" value="${relacionInstance.valor}" required=""/>
