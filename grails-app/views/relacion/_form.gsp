@@ -15,7 +15,7 @@
 		<g:message code="relacion.hacia.label" default="Hacia" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select name="hacia" from="${['PADRE', 'MADRE', 'NINO','OTRO']-[params.persona.toUpperCase()]}" keys="${['PADRE', 'MADRE', 'NINO','OTRO']-[params.persona.toUpperCase()]}" required="" value="${relacionInstance?.hacia?.name()}"/>
+	<g:select name="hacia" from="${['PADRE', 'MADRE', 'NINO','NUEVA_PAREJA']-[params.persona.toUpperCase()]}" keys="${['PADRE', 'MADRE', 'NINO','NUEVA_PAREJA']-[params.persona.toUpperCase()]}" required="" value="${relacionInstance?.hacia?.name()}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: relacionInstance, field: 'valor', 'error')} required">

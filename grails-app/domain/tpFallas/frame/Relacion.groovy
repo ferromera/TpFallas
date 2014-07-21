@@ -6,7 +6,7 @@ class Relacion {
 		PADRE,
 		MADRE,
 		NINO,
-		OTRO
+		NUEVA_PAREJA
 	}
 	 
 	Participante desde
