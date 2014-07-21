@@ -75,7 +75,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: padreInstance, field: 'horaLlegada', 'error')} required">
 	<label for="horaLlegada">
-		<g:message code="padre.horaLlegada.label" default="Hora Llegada" />
+		<g:message code="padre.horaLlegada.label" default="Hora Llegada (hhmm)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="horaLlegada" type="number" value="${padreInstance.horaLlegada}" required=""/>
@@ -83,7 +83,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: padreInstance, field: 'horaSalida', 'error')} required">
 	<label for="horaSalida">
-		<g:message code="padre.horaSalida.label" default="Hora Salida" />
+		<g:message code="padre.horaSalida.label" default="Hora Salida (hhmm)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="horaSalida" type="number" value="${padreInstance.horaSalida}" required=""/>

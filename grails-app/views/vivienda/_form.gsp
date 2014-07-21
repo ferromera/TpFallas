@@ -43,7 +43,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: viviendaInstance, field: 'riesgo', 'error')} required">
 	<label for="riesgo">
-		<g:message code="vivienda.riesgo.label" default="Riesgo (0 a +2 entero)" />
+		<g:message code="vivienda.riesgo.label" default="Riesgo (0 a 3 entero)" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="riesgo" type="number" value="${viviendaInstance.riesgo}" required=""/>

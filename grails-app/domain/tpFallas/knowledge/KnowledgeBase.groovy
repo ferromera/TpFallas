@@ -34,6 +34,6 @@ class KnowledgeBase {
 		vivienda()
 		violencias()
 		entrevistas()
-		nuevaPareja()
+		nuevaPareja(blank: true, nullable: true)
     }
 }

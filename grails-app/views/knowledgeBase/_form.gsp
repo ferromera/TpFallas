@@ -63,7 +63,7 @@
 		<g:message code="knowledgeBase.nuevaPareja.label" default="Nueva Pareja" />
 		
 	</label>
-	<g:select id="nuevaPareja" name="nuevaPareja.id" from="${tpFallas.frame.NuevaPareja.list()}" optionKey="id" noSelection="['':'-Elija o cree una nueva persona-']" value="${knowledgeBaseInstance?.nuevaPareja?.id}" class="many-to-one"/>
+	<g:select id="nuevaPareja" name="nuevaPareja.id" from="${tpFallas.frame.NuevaPareja.list()}" optionKey="id" noSelection="['null':'-Elija o cree una nueva persona-']" value="${knowledgeBaseInstance?.nuevaPareja?.id}" class="many-to-one"/>
 	<g:link  controller="nuevaPareja" action="create">Agregar Pareja</g:link>
 </div>
 
